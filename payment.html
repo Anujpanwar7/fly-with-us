@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/travel_826070.png" type="image/x-icon">
+
+    <style>
+        .payment-card {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-control {
+            margin-bottom: 20px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .copyright {
+
+            background-color: #333;
+
+            color: #fff;
+
+            padding: 10px;
+
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="payment-card">
+        <h2 class="text-center">Payment</h2>
+        <form action="process.php" method="post">
+            <div class="form-group">
+                <label for="cardname">Name on Card</label>
+                <input type="text" name="cardname" id="cardname" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="cardnumber">Card Number</label>
+                <input type="text" name="cardnumber" id="cardnumber" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="expdate">Expiration Date</label>
+                <input type="text" name="expdate" id="expdate" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" name="cvv" id="cvv" class="form-control" required>
+            </div>
+            <button type="submit" class="submit-btn">Make Payment</button>
+        </form>
+    </div>
+    <div class="copyright">
+
+        <p>&copy; 2022, Anuj Panwar. All rights reserved.</p>
+
+    </div>
+</body>
+
+</html>

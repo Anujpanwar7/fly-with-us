@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>fly with us</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="images/travel_826070.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins';
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(images/signupbackground.jpeg);
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 5px;
+            height: 700px;
+            background-image: url(background-image.jpg);
+            background: linear-gradient(#4776e6, #8e54e9);
+        }
+
+        .container .title {
+            font-size: 30px;
+            text-align: center;
+            font-weight: 600;
+            font-family: Vina Sans, Roboto Condensed;
+
+        }
+
+        .container .title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            background-image: url(a.jpg);
+
+        }
+
+        .container form .user-details {
+            background: linear-gradient(#347cac, #a94ace, );
+            background-size: cover;
+            font-weight: 800;
+            color: black;
+        }
+
+        .container form .user-details {
+            display: flex;
+
+            flex-wrap: wrap;
+            padding: 5px 10px;
+            margin: 10px;
+            justify-content: space-between;
+        }
+
+        form .user-details .input-box {
+            height: 45px;
+            width: 100%;
+
+        }
+
+        form .user-details .input-box {
+            width: 100%;
+        }
+
+        .user-details .input-box details {
+            margin: 20px 0 12px;
+            display: block;
+            font-weight: 500;
+
+        }
+
+        .user-details .input-box input {
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid rgb(180, 80, 80);
+            padding-left: 15px;
+            font-weight: bolder;
+            font-family: 'Franklin Gothic Medium';
+
+        }
+
+        .input-box {
+            padding: 8px 5px;
+            margin: 20px;
+        }
+
+        .category {
+            margin: 10px;
+            background-color: cyan;
+            padding: 10px 5px;
+        }
+
+        .gender-details {
+            font-weight: bolder;
+            font-size: medium;
+        }
+
+        .button input {
+            padding: 14px 40px;
+            background-color: whitesmoke;
+            color: black;
+            font-weight: 700;
+            font-size: medium;
+            transition: width 2s, height 2s, transform 2s;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: 300px;
+        }
+
+        .button input:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            width: 400px;
+        }
+
+        .container form .gender-details {
+            font-weight: 700;
+            color: linear-gradient(rgb(180, 136, 136), rgb(187, 187, 72));
+            padding: 0px 22px;
+            justify-content: space-between;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+
+    <div id="hello">
+        <div class="container">
+            <div class="title" style=" text-shadow: 4px 3px 0px #7A7A7A;"> Registration</div>
+            <form name="a" action="http://localhost:80/hello.php" method="post" onsubmit="hii()">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full name</span>
+                        <input type="text" name="fullname" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date of Birth
+                        </span>
+                        <input type="date" name="dob" placeholder="Enter your username" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" name="Email" placeholder="Enter your email id" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone number</span>
+                        <input type="number" name="phnnum" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm password</span>
+                        <input type="password" name="Confirmpassword" placeholder="Enter confirm password" required>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <span class="gender-title"> Gender</span>
+                    <div class="category">
+                        <label for="">
+                            <span class="dot one"></span>
+                            <input type="radio">
+                            <span class="gender">Male</span>
+
+
+                        </label>
+                        <label for="">
+                            <span class="dot one"></span>
+                            <input type="radio">
+                            <span class="gender">Female</span>
+
+                        </label>
+                        <label for="">
+                            <span class="dot one"></span>
+                            <input type="radio">
+                            <span class="gender">Prefer not to say</span></label>
+                    </div>
+                    <div class="button">
+
+                        <center>
+                            <a href="index.html">
+                                <input type="submit" value="register">
+                            </a>
+                        </center>
+                        </class>
+
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+   
+    <script>
+
+        function hii() {
+            var a = document.a.fullname.value;
+            var b = document.a.dob.value;
+            var c = document.a.Email.value;
+            var d = document.a.password.value;
+            var e = document.a.Confirmpassword.value;
+
+            if (a == null && b == null) {
+                alert("please fill above details")
+
+            }
+            else if (d.length < 6) {
+                alert("create a strong password min character6")
+            }
+            else if (c == null) { alert("Enter your email id") }
+
+            else if (d != e) {
+                alert("Check password ")
+            }
+            else {
+                document.getElementById("hello").innerHTML = "Registration Succefull.";
+            }
+        }
+
+
+
+
+        //     function hey(){
+        //     document.getElementById("hello").innerHTML="Registration Succefull.";
+        //     document.getElementById("hello").style.fontSize="36px";
+        //    document.body.background="white"
+        //   }
+    </script>
+
+</body>
+
+</html>

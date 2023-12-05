@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajasthan Trip Package</title>
+    <link rel="shortcut icon" href="images/travel_826070.png" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #FBDA61;
+            background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+
+        }
+
+        header h2 {
+            text-shadow: 4px 3px 0px #7A7A7A;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .col {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .card {
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 100%;
+            height: 90%;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+
+        footer h3 {
+            color: #495057;
+            margin-bottom: 20px;
+        }
+
+        footer a {
+            color: #495057;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #007bff;
+        }
+
+        footer p {
+            color: #495057;
+            margin-bottom: 10px;
+        }
+
+        .copyright {
+
+            background-color: #333;
+
+            color: #fff;
+
+            padding: 10px;
+
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rajasthan Trip Package</h1>
+        <h2>
+            "Enchanting Manali: Mountains and Tranquility"
+
+        </h2>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+
+                    <h2>Day 1</h2>
+                    <img src="images/rajasthan_1.jpg" alt="Destination 1">
+                    <p>Arrival in Jaipur: Begin your journey in the Pink City, where our team welcomes you and transfers
+                        you to your accommodation..</p>
+                    <button onclick="bookTicket('Destination 1')">Book Ticket</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h2>Day 2</h2>
+                    <img src="images/rajasthan_2.jpg" alt="Destination 2">
+                    <p>Jaipur Sightseeing: Explore the grandeur of Amber Fort, taking an elephant or Jeep ride up to the
+                        hilltop fortress. Visit the City Palace, a blend of Rajasthani and Mughal architecture, and
+                        Jantar Mantar, an astronomical observatory</p>
+                    <button onclick="bookTicket('Destination 2')">Book Ticket</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h2>Day 3</h2>
+                    <img src="images/rajasthan_3.webp" alt="Destination 3">
+                    <p> Drive to Jodhpur: Travel to Jodhpur, the Blue City, known for its majestic Mehrangarh Fort
+                        towering over the city.
+                        <button onclick="bookTicket('Destination 3')">Book Ticket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+
+                    <h2>Day 4</h2>
+                    <img src="images/rajasthan_4.jpg" alt="Destination 1">
+                    <p>Exploring Jodhpur: Discover the vibrant local markets, the serene Jaswant Thada, and the bustling
+                        Clock Tower.</p>
+                    <button onclick="bookTicket('Destination 1')">Book Ticket</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h2>Day 5</h2>
+                    <img src="images/rajasthan_5.jpeg" alt="Destination 2">
+                    <p>Journey to Udaipur: Travel to the City of Lakes, Udaipur, famed for its palaces, lakes, and
+                        romantic settings.</p>
+                    <button onclick="bookTicket('Destination 2')">Book Ticket</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h2>Day 6</h2>
+                    <img src="images/rajasthan_6.webp" alt="Destination 3">
+                    <p> Drive to Jodhpur: Travel to Jodhpur, the Blue City, known for its majestic Mehrangarh Fort
+                        towering over the city.
+                        <button onclick="bookTicket('Destination 3')">Book Ticket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Social Media</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+                <div class="col">
+                    <h3>Contact Us</h3>
+                    <p>Phone: +1 234 567 890</p>
+                    <p>Email: flywithus@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+
+        <p>&copy; 2022, Anuj Panwar. All rights reserved.</p>
+
+    </div>
+
+    <script>
+        function bookTicket(destination) {
+            alert("Ticket booked for " + destination);
+        }
+    </script>
+</body>
+
+</html>
